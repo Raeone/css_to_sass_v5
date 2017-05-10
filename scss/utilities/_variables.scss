@@ -1,0 +1,46 @@
+/*
+VARIABLES
+*/
+
+/* Colors -------------------------------------------------------- */
+
+/* Descriptive color varialbles */
+$almost-white: RGB(250, 250, 250);
+$light-grey: RGB(237, 237, 237);
+$medium-grey: RGB(231, 231, 231);
+$dark-grey: RGB(140, 140, 140);
+$almost-black: RGB(74, 74, 74);
+$ocean-blue: RGB(61, 172, 206);
+$light-blue: RGB(230, 248, 255);
+$light-yellow: RGB(255, 246, 227);
+$invisible: RGBA(0, 0, 0, 0);
+
+/* Functional color variables */
+$color-body: $almost-white;
+$color-nav: $almost-white;
+$color-sectionMain: $light-grey;
+$color-sectionPort: $light-blue;
+$color-sectionSkill: $light-yellow;
+$color-textMain: $almost-black;
+$color-textExtra: $dark-grey;
+$color-heading: $ocean-blue;
+$color-line: $medium-grey;
+
+
+
+/* Font stacks ---------------------------------------------------- */
+
+$text-content: "Open Sans", sans-serif;
+$text-heading: "Lobster", cursive;
+
+
+
+/* Media queries break points ------------------------------------- */
+
+$break-medium: 768px;
+$break-large: 1024px;
+
+
+
+
+

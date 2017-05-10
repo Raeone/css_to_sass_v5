@@ -1,0 +1,50 @@
+/*
+FOOTER
+*/
+
+footer {
+    .footer-line {
+        @extend %clearfix;
+        border-top: $color-line solid 1px;
+        padding: 1.471rem 0;
+    }
+
+    p, %p-spec {
+        @include font($f-size: 0.85rem, $f-weight: bold);
+        margin-bottom: 0;
+    }
+
+    .student-name {
+        float: left;
+        text-align: left;
+    }
+
+    .simple-nav {
+        @extend %p-spec;
+        @extend %uppercase;
+
+        float: right;
+        text-align: right;
+
+        @include media(medium) {
+            display: none;
+        }
+    }
+
+    .whole-nav {
+        @include font($f-size: 0.85rem, $f-weight: bold);
+        @extend %uppercase;
+
+        display: none;
+
+        @include media(medium) {
+            display: block;
+            float: right;
+
+            li {
+                display: inline;
+                padding-left: 1.8rem;
+            }
+        }
+    }
+}

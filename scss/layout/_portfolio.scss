@@ -1,0 +1,67 @@
+/*
+PORTFOLIO
+*/
+
+.portfolio {
+    @include font($f-size: 0.95rem);
+    @extend %clearfix;
+
+    background-color: $color-sectionPort;
+
+    @include media(large) {
+        padding-bottom: 0;
+    }
+
+    .portfolio-information {
+        margin: 2.353rem 0;
+
+        h3 {
+            @extend %font-h3;
+            margin: 1.176rem 0 0.588rem;
+        }
+
+        @include media(medium) {
+            float: left;
+            width: 50%;
+            margin: 0 0 2.353rem;
+
+            &:nth-child(even) {
+                padding-right: 0.588rem;
+                clear: left;
+            }
+
+            &:nth-child(odd) {
+                padding-left: 0.588rem;
+            }
+        }
+
+        @include media(large) {
+            float: left;
+            width: 32%;
+            margin: 0 0 2.535rem;
+
+            &:nth-child(even) {
+                padding-right: 0px;
+                clear: none;
+            }
+
+            &:nth-child(odd) {
+                padding-left: 0px;
+            }
+
+            &:nth-child(3n+1) {
+                margin-left: 1%;
+            }
+
+            &:nth-child(3n+2) {
+                margin-right: 1%;
+                clear: left;
+            }
+
+            &:nth-child(3n+3) {
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+        }
+    }
+}

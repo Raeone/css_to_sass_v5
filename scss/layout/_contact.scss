@@ -1,0 +1,22 @@
+/*
+CONTACT
+*/
+
+.contact {
+
+    p {
+        @extend %font-text-extra;
+    }
+
+    a {
+        @include font($f-color: $color-textExtra);
+    }
+
+    @include media(medium) {
+        max-width: 80%;
+    }
+
+    @include media(large) {
+        max-width: 60%;
+    }
+}

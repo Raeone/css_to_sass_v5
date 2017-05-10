@@ -1,0 +1,30 @@
+/*
+SKILLS
+*/
+
+.skills {
+    background-color: $color-sectionSkill;
+    @extend %clearfix;
+
+    p {
+        @include font($f-size: 0.95rem);
+
+        @include media (medium) {
+            text-align: justify;
+        }
+    }
+
+    img {
+        @include media(medium) {
+            text-align: right;
+            float: right;
+            width: 55%;
+            margin-left: 1.176rem;
+            margin-bottom: 0.6rem;
+        }
+    }
+}
+
+
+
+

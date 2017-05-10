@@ -1,0 +1,24 @@
+/*
+MIXINS
+ */
+
+/* Font */
+@mixin font($f-name: null, $f-size: null, $f-weight: null, $f-color: null) {
+    font-family: $f-name;
+    font-size: $f-size;
+    font-weight: $f-weight;
+    color: $f-color;
+}
+
+
+/* Media queries */
+@mixin media($media) {
+    @if $media == medium {
+        @media screen and (min-width: $break-medium) { @content }
+    } @else if $media == large {
+        @media screen and (min-width: $break-large) { @content }
+    } @else { /* allows custom breakpoints */
+        @media screen and (min-width: $media) { @content }
+    }
+}
+

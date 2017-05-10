@@ -1,0 +1,69 @@
+/*
+GLOBAL
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+
+    @include media(medium) {
+        font-size: 19px;
+    }
+
+    @include media(large) {
+        font-size: 22px;
+    }
+}
+
+body {
+    @extend %font-body;
+    background-color: $color-body;
+}
+
+p {
+    margin: 0 0 1.176rem;
+}
+
+h2 {
+        @extend %font-h2;
+        margin-top: 1.176rem;
+        margin-bottom: 2.353rem;
+    }
+
+.wrapper {
+    padding: 1.176rem 1.176rem;
+    margin: 0 auto;
+
+    @include media(medium) {
+        padding: 2.353rem;
+    }
+
+    @include media(large) {
+        max-width: 1400px;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    &:link,
+    &:visited {
+        @include font($f-color: $color-textMain);
+        text-decoration: none;
+    }
+    &:hover {
+        @include font($f-color: $color-heading);
+    }
+}
+
+img {
+    width: 100%;
+}
+

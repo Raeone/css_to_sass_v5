@@ -1,0 +1,43 @@
+/*
+EXTENDS
+*/
+
+/* Typography */
+%font-body {
+    @include font($f-name: $text-content, $f-size: 1rem, $f-weight: normal, $f-color: $color-textMain);
+    line-height: 1.5;
+    text-align: center;
+}
+
+%font-text-extra {
+    @include font($f-name: $text-content, $f-color: $color-textExtra, $f-weight: 300, $f-size: 1.04rem);
+}
+
+%font-h1 {
+    @include font($f-size: 1.95rem, $f-color: $color-heading, $f-name: $text-heading, $f-weight: normal);
+
+}
+
+%font-h2 {
+    @include font($f-weight: bold, $f-size: 0.9rem, $f-name: $text-content, $f-color: $color-textMain);
+    text-transform: uppercase;
+}
+
+%font-h3 {
+    @include font($f-size: 1.1rem, $f-color: $color-heading, $f-name: $text-content, $f-weight: normal);
+}
+
+/* Text */
+%uppercase {
+    text-transform: uppercase;
+}
+
+/* Clearfix */
+%clearfix {
+    &::after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
